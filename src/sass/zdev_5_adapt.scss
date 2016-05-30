@@ -11,13 +11,48 @@
 
 }
 @media screen and (max-width: 1024px){
+/*header*/
+        header {
 
-}
+            .title {
+                .letf {  right:50%;  }
+                .right {  left:50%; }
+            }
+        }
+/*END header*/
+    }
 @media screen and (max-width: 992px){
 
 }
 @media screen and (max-width: 767px){
+    /*header*/
+    header {
+        .content{    min-height: 662px;}
+        .title {
+            h1{font: italic 900 50px/60px 'Helvetica';}
+            .letf {  right:0;     bottom: -150px;}
+            .right {  left:0;}
+        }
+        .elems{
+            .gray{ width: 280px;
+                .box { width: 240px; }
+                .one{    left:0;}
+                .two{    right: 0;}
+            }
+            .red{ width: 200px;}
+        }
+        &.animated {
 
+            .elems{
+                .round{
+                    &:before { width: 350px; height: 350px; }
+                    &:after { width: 600px; height: 600px; }
+                }
+
+            }
+        }
+    }
+    /*END header*/
 }
 @media screen and (max-width: 666px){
 
