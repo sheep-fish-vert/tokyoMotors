@@ -97,5 +97,11 @@ input, textarea{
 
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
 
+@include font-face('Helvetica', 'HelveticaNeueCyr-Light', 300);
+@include font-face('Helvetica', 'HelveticaNeueCyr-Medium', 500);
+@include font-face('Helvetica', 'HelveticaNeueCyr-MediumItalic', 500, italic);
+@include font-face('Helvetica', 'HelveticaNeueCyr-Bold', 700);
+@include font-face('Helvetica', 'HelveticaNeueCyr-BlackItalic', 900, italic);
+
 
 /*/fonts*/
