@@ -36,12 +36,12 @@
         }
     }
     
-    .fancybox-form{
+
         .fancybox-close{ top: -20px; right: -20px; width: 16px; height: 16px; background-image: none; overflow: hidden; background-color: transparent;
             &:before{content: ''; position: absolute; width: 30px; height: 2px; transform: rotate(45deg); background-color: white; bottom: 5px; left: -5px; transition: all 0.3;}
             &:after{content: ''; position: absolute; width: 30px; height: 2px; transform: rotate(-45deg); background-color: white; bottom: 9px; left: -5px; transition: all 0.3s;}
         }
-    }
+
     
     #call_success{ width: 280px; padding: 10px;
         .call_success{height: 180px; display: flex; align-items: center; justify-content: center; align-content: center; text-align: center; flex-wrap: wrap;

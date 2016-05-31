@@ -59,14 +59,7 @@
             .letf {  right:0;     bottom: -150px;}
             .right {  left:0;}
         }
-        .elems{
-            .gray{ width: 280px;
-                .box { width: 240px; }
-                .one{    left:0;}
-                .two{    right: 0;}
-            }
-            .red{ width: 200px;}
-        }
+
         &.animated {
 
             .elems{
@@ -83,6 +76,7 @@
 @media screen and (max-width: 666px){
     /*second*/
         .second-block {
+            .block-wrap{     background-position: 60% 284px; background-attachment:inherit; background-size:inherit;}
             .title {padding: 32px 20px 40px;
                 &:before,
                 &:after { display: none;}
