@@ -1,4 +1,4 @@
-.third-block{position: relative;  min-height: 1150px;background: url('../images/third-block-background.jpg') no-repeat; background-size: cover; background-position: 50% 70%; font-family: 'Helvetica'; font-weight: 500;background-attachment: fixed;
+.third-block{position: relative;  min-height: 1150px;background: url('../images/third-block-background.jpg') no-repeat; background-size: cover; background-position: 50% 70%; font-family: 'Helvetica'; font-weight: 500;
 	.mbox{padding: 100px 0 50px 0;
 		.heading{padding-bottom: 50px; 
 			h2{text-transform: uppercase; text-align: center; font-size: 45px; font-weight: 500; text-shadow: 0 0 15px #fff;}	
@@ -14,7 +14,7 @@
 
 .four-block{ 
 	.wrapper{ display: flex; ;
-		.left-part{ background: url('../images/four-block-left-bg.jpg') no-repeat; background-size: contain; width: calc(100% * 0.7); position: relative; min-height: 1010px; background-position: 0% 0%; overflow: hidden;
+		.left-part{ background: url('../images/four-block-left-bg.jpg') no-repeat; background-size: contain; width: calc(100% * 0.7); position: relative; min-height: 1010px; height: 1010px; background-position: 0% 0%; overflow: hidden;
 			.four-mountains{position: absolute; bottom: -300px; right: 0; transition: all 2.5s;
 				
 			}
@@ -27,7 +27,7 @@
 						h2{font-size: 45px; font-weight: 300;}
 					}
 					.text-part{
-						p{font-size: 16px; font-weight: 300;}
+						p{font-size: 16px; font-weight: 300;line-height: 1.2; color: #787878; letter-spacing: 0.5px;}
 					}
 				}
 				
