@@ -1,36 +1,35 @@
 /*header*/
     header {
-        .content { position: relative; width: 100%; background-image: url(../images/topBG.jpg); background-position: center top; background-size: cover; overflow: hidden; min-height: 1025px;
+        .content { position: relative; width: 100%; background-image: url(../images/topBG.jpg); background-position: center center; background-size: cover; overflow: hidden; height: 100vh;
             &:after,
             &:before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-image: url(../images/point.png); opacity: 0; transition:all 300ms 600ms;}
         }
-        .title { color: #fff; position: absolute; z-index: 100; width: 100%; text-align: center; left: 0; top: 50%; transform: translateY(-46%); padding: 0 20px;
+        .title { color: #fff; position: absolute; z-index: 100; width: 100%; text-align: center; left: 0; top: 50%; transform: translateY(-46%); padding: 0 20px; opacity:0; transition:all 300ms 900ms;
             h1 { font: italic 900 90px/90px 'Helvetica'; text-transform: uppercase; }
-            .txt { font: italic 500 20px/24px 'Helvetica'; max-width: 500px; position: absolute;  padding: 0 20px;}
-            .letf { text-align: right;     right: calc(50% + 196px);  bottom: -102px;}
-            .right { text-align: left;     left: calc(50% + 196px);    top: -114px; }
+            .txt{ font: italic 500 20px/24px 'Helvetica'; max-width: 500px; position: absolute;  padding: 0 20px;}
+            .letf{ text-align: right;  right: calc(50% + 196px);  bottom: -102px;}
+            .right{ text-align: left; left: calc(50% + 196px);    top: -114px; }
         }
         .logo { left: 0; top: 0; position: absolute;width: 100%; padding-left: 15px; z-index: 100;
             .logo-wrap{    max-width: 1774px;   margin: 0 auto;   padding-top: 40px; }
         }
         .elems { position: absolute; left: 0; top: 0; height: 100%; width: 100%; z-index: 50;
-            .round { position: absolute; left: 0; top: 0; height: 100%; width: 100%;
+            .round { position: absolute; left: 0; top: 0; height: 100%; width: 100%; z-index:75;
                 &:before,
-                &:after { content: ''; position: absolute; border-width: 2px; border-color: rgba(255, 255, 255, 0.5); border-radius: 50%; display: block; left: 50%; top: 50%; transform: translate(-50%, -50%); transition:all 300ms 600ms;}
+                &:after { content: ''; position: absolute; border-width: 2px; border-color: rgba(255, 255, 255, 0.5); border-radius: 50%; display: block; left: 50%; top: 50%; transform: translate(-50%, -50%); transition:all 600ms 600ms;}
                 &:before { width: 0; height:0; border-style: solid; }
                 &:after { width: 0; height: 0; border-style: dotted; }
             }
-            .red { width: 546px; overflow: hidden; transform: rotate(25deg) translateX(-50%); position: absolute; height: 200%; top: -50%; left: 50%;
-                .box { background-image: url(../images/redbg.png); height: 0; top: 0; opacity:0.8; transition:all 300ms 300ms; }
+            .red { width: 100%; position: absolute; height: 0; left: 0; top: 0;z-index: 50;transition:all 300ms 300ms;
+                 background-image: url(../images/redbg2.png); background-repeat: no-repeat;background-position: center center; background-size: cover;
             }
-            .gray { position: absolute; height: 200%; bottom: -50%; transform: rotate(25deg) translateX(-50%); width: 601px;left: 50%;
-                .box { width: 601px; background-color: rgba(255, 255, 255, 0.05); height: 0; position: absolute;bottom: 0;transition:all 300ms;}
-                .one{    left: calc(50% - 275px);}
-                .two{    right: calc(50% - 280px);}
+            .gray { width: 100%; position: absolute; height: 0; left: 0; bottom: 0;z-index: 25;transition:all 300ms;
+                background-image: url(../images/grayBG2.png); background-repeat: no-repeat;background-position: center center; background-size: cover;
             }
         }
 
         &.animated {
+            .title{ opacity:1;}
             .content{
                 &:after,
                 &:before{ opacity:0.1;}
@@ -40,12 +39,8 @@
                     &:before { width: 650px; height: 650px; }
                     &:after { width: 1302px; height: 1302px; }
                 }
-                .red{
-                    .box{height: 100%;}
-                }
-                .gray{
-                    .box{ height: 100%;}
-                }
+                .red{height: 100%;}
+                .gray{height: 100%;}
             }
         }
     }
@@ -68,7 +63,9 @@
         }
         .block-wrap{padding-bottom: 520px; background-position: center bottom;background-attachment: fixed; background-repeat:no-repeat; background-size:cover;
             .block{   vertical-align: top; width: 50%; float: left;min-height: 800px; display: flex; align-items: center; }
-            .left{ background-color: #fafafa;justify-content: space-around;}
+            .left{ background-color: #fafafa; text-align: center; display: block; position: relative;
+                img{ position: absolute; left: 0; top:50%; transform: translateY(-50%); width: 100%;}
+            }
             .right{color: #787878; font: 300 16px/20px 'Helvetica'; background-image: url(../images/rightBG.jpg); padding: 0 65px;   margin-top: -100px; background-size:cover; position: relative;
                 h5{ color: #3f3f3f; font: 700 36px/42px 'Helvetica'; margin-bottom: 25px; position: relative;
                     &:before{ position: absolute;content: ''; background-image: url(../images/vetka.png); width: 239px; height: 117px;     bottom: -103px; left: -178px;}
