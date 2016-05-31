@@ -8,13 +8,27 @@
 
 }
 @media screen and (max-width: 1280px){
-
+	.four-block .wrapper .left-part .mbox{padding: 30px 10px 0px 30px;
+		.info-conteiner{
+			.heading{
+				h2{ text-align:center;}
+			}
+		}
+	}
 }
 @media screen and (max-width: 1024px){
 
 }
 @media screen and (max-width: 992px){
-
+	.four-block .wrapper .left-part{min-height: 800px;
+		.mbox{padding: 30px 10px 0px 30px;
+			.info-conteiner{
+				.heading{
+					h2{ font-size: 35px;}
+				}
+			}
+		}
+	}
 }
 @media screen and (max-width: 767px){
 	.third-block{ 
@@ -26,17 +40,26 @@
 			}
 		}
 	}
+	.four-block .wrapper .left-part{
+		.mbox{padding: 20px 10px 0px 30px;
+			.info-conteiner{
+				.heading{
+					h2{ font-size: 30px;}
+				}
+			}
+		}
+	}
 }
 @media screen and (max-width: 666px){
-	.four-block .wrapper .left-part .mbox{padding: 80px 10px 0px 30px;
+	.four-block .wrapper .left-part .mbox{padding: 20px 10px 0px 30px;
 		 .info-conteiner .heading h2 {
-			font-size: 30px;
+			font-size: 20px;
 		}
 	}
 }
 @media screen and (max-width: 479px){
-	.third-block .mbox .heading{ 
-		h2{font-size: 35px;
+	.third-block .mbox .heading{
+		h2{font-size: 35px; 
 		}
 	}
 	.third-block .mbox .advantages .advantage{
@@ -46,8 +69,10 @@
 		.left-part {width: 100%; min-height: 800px;
 			.mbox{
 				.info-conteiner{
-				 	.heading h2 {
-						font-size: 20px;
+				 	.heading{padding-right: 30px;
+					 	h2 {
+							font-size: 20px;
+						}
 					}
 					.text-part{
 						p{
