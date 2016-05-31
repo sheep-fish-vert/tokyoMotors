@@ -14,7 +14,7 @@
 
 .four-block{ 
 	.wrapper{ display: flex; ;
-		.left-part{ background: url('../images/four-block-left-bg.jpg') no-repeat; background-size: contain; width: calc(100% * 0.7); position: relative; min-height: 1010px; background-position: 0% 0%; overflow: hidden;
+		.left-part{ background: url('../images/four-block-left-bg.jpg') no-repeat; background-size: contain; width: calc(100% * 0.7); position: relative; min-height: 1010px; height: 1010px; background-position: 0% 0%; overflow: hidden;
 			.four-mountains{position: absolute; bottom: -300px; right: 0; transition: all 2.5s;
 				
 			}

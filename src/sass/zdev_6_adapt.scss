@@ -20,7 +20,7 @@
 
 }
 @media screen and (max-width: 992px){
-	.four-block .wrapper .left-part{min-height: 800px;
+	.four-block .wrapper .left-part{min-height: 800px;height: 800px;
 		.mbox{padding: 30px 10px 0px 30px;
 			.info-conteiner{
 				.heading{
@@ -66,7 +66,7 @@
 		width: 40%;
 	}
 	.four-block .wrapper{ flex-direction: column;
-		.left-part {width: 100%; min-height: 800px;
+		.left-part {width: 100%; min-height: 800px; height: 800px;
 			.mbox{
 				.info-conteiner{
 				 	.heading{padding-right: 30px;
